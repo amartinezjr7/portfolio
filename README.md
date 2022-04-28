@@ -46,7 +46,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 - [Acceptance Criteria](#acceptance-criteria)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Deployed Site](#deployed-site)
 - [Challanges](#challanges)
 - [Questions](#questions)
 
@@ -54,9 +54,9 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 `npm install`
 
-## Usage
+## Deployed Site
 
-`npm start`
+[link](https://whispering-hollows-22916.herokuapp.com)
 
 ## Challanges
 
