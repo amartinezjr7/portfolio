@@ -1,49 +1,40 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import { Navbar } from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
-function Nav() {
-  const  categories = [
-    { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' }
-  ];
-
-  const handleClick = () => {
-    console.log("click handled")
-  }
-
+function Nav(props) {
   return (
-    <header data-testid="header" className="flex-row px-1">
-      <h2>
-        <a href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
-              About me
-            </a>
+    <div>
+      <Navbar expand="lg" bg="dark" sticky="top">
+        <NavLink className="nav-link" to="/">
+          <div class="text-light">
+            <h4 class="nav-title-font">Alajandro Martinez Jr.</h4>
+          </div>
+        </NavLink>
+        <ul class="navbar-nav ml-auto navitem-indent">
+          <li class="nav-item">
+            <NavLink to="/about">
+              <div class="nav-font text-light">About Me</div>
+            </NavLink>
           </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
-              Contact
-            </span>
+          <li class="nav-item">
+            <NavLink to="/portfolio">
+              <div class="nav-font text-light">Portfolio</div>
+            </NavLink>
           </li>
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                 {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))
-          }
+          <li class="nav-item">
+            <NavLink to="/contact">
+              <div class="nav-font text-light">Contact</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/resume">
+              <div class="nav-font text-light">Resume</div>
+            </NavLink>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </Navbar>
+    </div>
   );
 }
 

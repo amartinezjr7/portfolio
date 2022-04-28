@@ -1,14 +1,19 @@
 import React from 'react';
 import About from './components/About';
-import Nav from './components/Nav';
+import Header from './components/Header';
+import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
    <div>
-     <Nav></Nav>
+     <Header></Header>
      <main>
        <About></About>
+       
+        <ContactForm></ContactForm>
      </main>
+    <Footer></Footer>
    </div>
   );
 }
