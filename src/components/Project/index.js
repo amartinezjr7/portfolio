@@ -1,7 +1,7 @@
 import React from 'react'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Projects(props) {
+// Individual Cards 
+function ProjectCards(props) {
     return (
       <div className="card"> 
         <div className="img-container">
@@ -23,4 +23,4 @@ function Projects(props) {
     );
 }
   
-  export default Projects;
+  export default ProjectCards;

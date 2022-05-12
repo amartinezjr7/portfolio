@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Game-Deets",
+        "image": "./src/assets/small/project3-cover.JPG",
+        "github": "https://github.com/RobertRish/gamedeets",
+        "deploy": "https://secret-stream-49318.herokuapp.com/",
+        "topics": "Reactjs, Creat-React-App service worker, GraphQl, Redux, JWT Authentication, ReactStrap, node, express-session, jawsdb, mongodb, mongoose"
+    }
+]
